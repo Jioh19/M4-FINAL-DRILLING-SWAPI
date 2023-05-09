@@ -95,7 +95,10 @@ article {
 .sector-3 {
 
     display:flex;
+	flex-wrap: wrap;
     position: relative;
+	margin: auto;
+
 }
 
 .card {
@@ -103,7 +106,7 @@ article {
 	margin: 1rem;
 	font-weight: 300;
     font-size: clamp(0.5rem, 4vw, 1rem);
-	width: min(30%, 20rem);
+	width: min(90%, 25rem);
 	border-radius: 5px;
 	box-shadow: var(--line-color) 2px 2px 2px 2px;
 	padding: 0.5rem;
@@ -112,6 +115,8 @@ article {
 .card:active {
 	animation: pulse 0.05s;
 }
+
+
 @keyframes pulse {
 	0% {
 		transform: scale(1);
@@ -124,18 +129,18 @@ article {
 	}
 }
 
-.cardRed:hover {
+.card-1:hover {
 	box-shadow: 0 0 10px 0 var(--rojo) inset, 0 0 20px 2px var(--rojo);
 	background: var(--rojo);
 	color: white;
 }
 
-.cardGreen:hover {
+.card-2:hover {
 	box-shadow: 0 0 10px 0 var(--verde) inset, 0 0 20px 2px var(--verde);
 	background: var(--verde);
 }
 
-.cardBlue:hover {
+.card-3:hover {
 	box-shadow: 0 0 10px 0 var(--azul) inset, 0 0 20px 2px var(--azul);
 	background: var(--azul);
 	color: white;
@@ -158,15 +163,15 @@ h2 {
     background:white;
 }
 
-.btnRed {
+.btn-1 {
 	background: var(--rojo);
 }
 
-.btnGreen {
+.btn-2 {
 	background: var(--verde);
 }
 
-.btnBlue {
+.btn-3 {
 	background: var(--azul);
 }
 
