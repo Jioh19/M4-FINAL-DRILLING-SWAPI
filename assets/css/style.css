@@ -127,7 +127,7 @@ article {
 }
 
 .cardload-1 {
-	background: linear-gradient(var(--rojo) 0 0) no-repeat calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + 0.2em);
+	background: linear-gradient(var(--rojo) 0 0) no-repeat calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + 0.3em);
 	transition: 0.3s calc(var(--i, 0) * 0.3s), background-position 0.3s calc(0.3s - calc(var(--i, 0) * 0.3s));
 }
 .cardload-1:hover {
@@ -240,11 +240,11 @@ p {
 
 .btnIndice {
 	position: absolute;
-	height: 0.5rem;
-	width: 0.5rem;
+	height: 0.75rem;
+	width: 0.75rem;
 	padding: -5px;
 	top: 50%;
-	transform: translate(-5px, -50%);
+	transform: translate(-7px, -50%);
 	border-radius: 50%;
 	border: none;
 	background: var(--amarillo);
