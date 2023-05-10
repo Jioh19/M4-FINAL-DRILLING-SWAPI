@@ -1,7 +1,12 @@
+let index = [true, true, true];
+
 function cargar(num) {
-    for (let i = 0; i< 5; i++) {
-        buscar((num-1) * 5 + 1 + i, num);
-    }
+	if(index[num-1]) {
+		for (let i = 0; i < 5; i++) {
+			buscar((num - 1) * 5 + 1 + i + index[num - 1], num);
+		}
+		index[num-1] = false;
+	}
 }
 
 async function buscar(num, origen) {
