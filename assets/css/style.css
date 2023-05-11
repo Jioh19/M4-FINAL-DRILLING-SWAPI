@@ -333,6 +333,11 @@ p {
 	height: 3rem;
 }
 
+h3 {
+	text-shadow: 3px 3px 3px black;
+	color: white;
+}
+
 .modal-body {
 	display: flex;
 	flex-wrap: wrap;
