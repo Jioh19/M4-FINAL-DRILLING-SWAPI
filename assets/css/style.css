@@ -153,7 +153,7 @@ article {
 	background: var(--c) calc(-100% + var(--i, 0) * 100%) 100% / 50% calc(100% * var(--i, 0) + 0.08em),
 		var(--c) calc(200% - var(--i, 0) * 100%) 0 / 50% calc(100% * var(--i, 0) + 0.08em);
 	transition: 0.3s calc(var(--i, 0) * 0.3s), background-position 0.3s calc(0.3s - var(--i, 0) * 0.3s);
-	color: black;
+
 }
 .cardload-2:hover {
 	--i: 1;
@@ -225,10 +225,14 @@ p {
 	padding-right: 0.5rem;
 }
 
+html{
+	color-scheme: light dark;
+}
+
 .indice {
 	display: flex;
 	font-weight: 400;
-	color: black;
+
 }
 
 /* Colocando el indice numerario fuera del contenedor */
