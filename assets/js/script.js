@@ -1,3 +1,4 @@
+// Variables globales... al final enredaron el código
 const index = [true, true, true];
 const range = [0, 5, 11, 17];
 const promesas = [];
@@ -35,6 +36,7 @@ async function buscar(num, origen) {
 		});
 }
 
+//* Creando las tarjetas en la página y en el modal
 function createCard(personaje, num) {
 	const node = document.querySelector(`.sector-${num}`);
 	const modal = document.querySelector('.modal-body');

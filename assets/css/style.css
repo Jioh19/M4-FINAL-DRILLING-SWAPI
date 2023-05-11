@@ -99,6 +99,7 @@ article {
 	margin: auto;
 }
 
+/* Definiendo las tarjetas */
 .card {
 	display: flex;
 	margin: 1rem;
@@ -110,6 +111,8 @@ article {
 	padding: 0.5rem;
 }
 
+
+/* Efectos en las tarjetas */
 .card:active {
 	animation: pulse 0.05s;
 }
@@ -126,6 +129,7 @@ article {
 	}
 }
 
+/* Efecto espada up */
 .cardload-1 {
 	background: linear-gradient(var(--rojo) 0 0) no-repeat calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + 0.3em);
 	transition: 0.3s calc(var(--i, 0) * 0.3s), background-position 0.3s calc(0.3s - calc(var(--i, 0) * 0.3s));
@@ -136,12 +140,14 @@ article {
 	color: white;
 }
 
+/* Efecto sombra coloreada */
 .card-1:hover {
 	box-shadow: 0 0 10px 0 var(--rojo) inset, 0 0 20px 2px var(--rojo);
 	background: var(--rojo);
 	color: white;
 }
 
+/* Efecto por ambos lados */
 .cardload-2 {
 	--c: no-repeat linear-gradient(var(--verde) 0 0);
 	background: var(--c) calc(-100% + var(--i, 0) * 100%) 100% / 50% calc(100% * var(--i, 0) + 0.08em),
@@ -162,6 +168,7 @@ article {
 	color: black;
 }
 
+/* Efecto isquierda a derecha */
 .cardload-3 {
 	background: linear-gradient(var(--azul) 0 0) calc(100% - var(--p, 0%)) / var(--p, 0%) no-repeat;
 	transition: 0.4s, background-position 0s;
@@ -184,6 +191,7 @@ h2 {
 	font-size: clamp(0.75rem, 5vw, 1.5rem);
 }
 
+/* Definición de botones */
 .btn {
 	border: none;
 	border-radius: 50%;
@@ -192,6 +200,7 @@ h2 {
 	margin: clamp(0.2rem, 5vw, 0.5rem);
 }
 
+/* Invirtiendo el color del botón cuando hay hover */
 .card:hover .btn {
 	background: white;
 }
@@ -222,6 +231,7 @@ p {
 	color: black;
 }
 
+/* Colocando el indice numerario fuera del contenedor */
 .relativo1 {
 	position: absolute;
 	top: 50%;
@@ -240,6 +250,7 @@ p {
 	transform: translate(-160%, -50%);
 }
 
+/* Colocando la bola dorada sobre el borde del contenedor */
 .btnIndice {
 	position: absolute;
 	height: 0.75rem;
